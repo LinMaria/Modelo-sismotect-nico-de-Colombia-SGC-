@@ -1,0 +1,29 @@
+\input{EncabezadoTesisMSc}
+%\includeonly{Kap1/Kap1,Kap2/Kap2}
+\begin{document}
+\pagenumbering{roman}
+\include{HojaTitulo/HojaTituloMSc}
+
+\renewcommand{\tablename}{\textbf{Table}}
+\renewcommand{\figurename}{\textbf{Figure}}
+\renewcommand{\listtablename}{Lista de Tablas}
+\renewcommand{\listfigurename}{Lista de Figuras}
+\renewcommand{\contentsname}{Contents}
+
+
+%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\tableofcontents
+%\include{Tab_Simbolos/TabSimbolosMSc}
+%\include{Resumen}%\newcommand{\clearemptydoublepage}{\newpage{\pagestyle{empty}\cleardoublepage}}
+\pagenumbering{arabic}
+\include{Kap1/Kap1}
+\include{State_of_Art/State}
+\include{Kap2/Kap2}
+\include{Kap3/Kap3}
+\include{Kap4/Kap4}
+\include{Kap5/Kap5}
+
+
+\bibliographystyle{plaindin}
+\bibliography{Mendeley}
+\end{document}

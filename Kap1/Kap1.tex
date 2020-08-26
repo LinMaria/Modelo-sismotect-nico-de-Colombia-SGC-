@@ -1,0 +1,17 @@
+\chapter{Introduction}
+
+Nowadays the use of the mobile phones is generalized all around the world and it has become a device which is used in all contexts of life. Phone calls are done in all different kinds of environments, exposing the microphone (or microphones) to a large kind of noises. It is required that the noises captured by the microphone system is not transmitted in the phone call, because of this, digital real time filters are used. This complete process is often called voice enhancement.\\
+
+Several works in the frequency domain have used arrays with multiple microphones to improve the previous singles channel approaches. One of these research is the one found in \cite{Yong2013}, there it is proposed a multichannel speech enhancement method based on the Wiener filter which is incorporated to a single channel filter that is used as reference. This algorithm has proved to have better performance in noisy situations over the conventional single channel methods. \\
+
+As most of the speech enhancement methods, the one based on the multichannel Wiener filter, needs one Voice Activity Detector (VAD) to perform the calculation of the noise and voice correlation matrices. In \cite{Yong2013} they propose a variation which uses a Speech Presence Probability (SPP) method to achieve this. The SPP contains the information of how likely it is that there is presence of voice in a frequency bin.\\
+
+As several VAD and SPP methods have been developed for different algorithms, the goal of this project is to do a research of different of this methods, implement them on Matlab for a multichannel Wiener filter, do the right tests and show the dependency of this filter from the SPP or VAD block.\\
+
+This document will be divided in 5 parts: problem and its background, where the basis of the multichannel Wiener filter algorithm are shown; Literature Review, where some previous work on the area will be found; Implementation, where it will be shown how the filter was implemented and testes; results, with comparison of the different variables and conclusions. 
+
+
+
+
+
+

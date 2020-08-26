@@ -1,0 +1,37 @@
+\chapter{Conclusions and Recommendations}
+
+\section{Conclusions}
+
+In this document it was presented a detailed illustration of the Multichannel Wiener Filter as well as a description of each of it's blocks and how to implement them. Special attention was given to the Speech Presence Probability block and different algorithms for it were tested. The overall result shows that the method proposed in \cite{Gerkmann2011NoisePresence} when tracking time average and with the 3 regions method for avoiding stagnation.\\
+
+The method proposed in \cite{SPPYONG} showed that is not compatible with the 3 regions method and the result of this was a lower PESQ score than the noisy input, which means that was only degrading the voice. However, when used with the tracking time average method, the results were better, but still worst that \cite{Gerkmann2011NoisePresence}.\\
+
+The only consideration that may be done at the moment of choosing an algorithm for avoiding stagnation for \cite{Gerkmann2011NoisePresence} is that the time tracking average needs more storage memory due to it's need to save the complete vector of the smoothed SPP for every frame, which could lead to higher costs depending the implementation.
+
+
+
+
+\section{Recommendations}
+
+This complete document can be used a guide for future projects, here it can be found step by step how to implement a multichannel noise filter, a single channel noise filter, two speech presence probability methods with two different algorithms for avoiding stagnation and references on how to test any speech enhancement method. All of this can save important time for further research. \\
+
+Also, because of the big amount of blocks that this method has, it is always possible to try to find optimum values for different situations. In the future, values like the a priori SNR and smoothing times can be tested and arranged for more specific situations.\\
+
+These kind of algorithms is be important for communications systems and this document can be used as help for coding speech enhancement projects in mobile phones, car hands-free systems, computers, microphone arrays for public speeches and many others. \\
+
+Finally, the data base and the code are open to be used for tests. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
